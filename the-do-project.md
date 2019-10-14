@@ -27,7 +27,7 @@ All this is saved in a file with the `.do` extension. `--filename.do` is the syn
 ```
 --2019-October.do
 ```
-The first character in a file name represents its state (in this case *do*) but all following dashes are used instead of a space and have no special meaning. If the list is completed or cancelled we change the first character to reflect the change of state.
+The first character in a file name represents its state (in this case *do*), all following characters have no special meaning. If the list is completed or cancelled we change the first character to reflect the change of state.
 ```
 x-2019-October.do
 ```

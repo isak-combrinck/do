@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The do Project</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="the-do-project">The do Project</h1>
+<p>The do Project defines a standard syntax for creating plain text <em>do lists</em> (like a to do list but with less postponing and more getting things done).</p>
+<p>Let's start with an example of a simple do list; I will explain the syntax below.</p>
+<pre><code><div>2019.10.07 Monday
+- polish first draft for the do project
+x write first draft for the do project
+! don't update windows
+
+Backlog
+- create website for the do project
+- test out the do project in real life
+
+Wishlist
+- create a compiler, do to html
+</div></code></pre>
+<p>From the example we see that the do list is divided into sections. A <strong>section</strong> is any block of text with an empty line above and below it; so basically a paragraph. Headings are a simple text to let you know what the coming section is about, when it's due, etc. A <strong>heading</strong> is simply the first line of text in a section.</p>
+<p>Each section contains a number of tasks which can be in one of three states.</p>
+<ul>
+<li><code>-</code> <strong>Do</strong>: something to get done.</li>
+<li><code>x</code> <strong>Done</strong>: something that got done.</li>
+<li><code>!</code> <strong>Cancelled</strong>: something that had to get done but did not get done.</li>
+</ul>
+<p>All this is saved in a file with the <code>.do</code> extension. <code>--filename.do</code> is the syntax for a do file, let's dissect the syntax of an example do file to make it more understandable.</p>
+<pre><code><div>--2019-October.do
+</div></code></pre>
+<p>The first character in a file name represents its state (in this case <em>do</em>), all following characters have no special meaning. If the list is completed or cancelled we change the first character to reflect the change of state.</p>
+<pre><code><div>x-2019-October.do
+</div></code></pre>
+<pre><code><div>!-2019-October.do
+</div></code></pre>
+<p>This helps makes folders with a lot of different do lists easier to manage as it groups files by their state (do, done, cancelled).</p>
+<h3 id="thats-it-with-three-characters-and-a-little-formatting-knowledge-you-are-ready-to-get-productive">That's it! With three characters and a little formatting knowledge you are ready to get productive.</h3>
+
+    </body>
+    </html>
