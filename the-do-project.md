@@ -1,5 +1,7 @@
 # The Do Project
 
+2019-12-16: Version 0.1.0 '*Working Draft*'
+
 *The Do Project* defines a standard syntax for creating plain text do lists.
 
 This is a formal write-up of the syntax that I use for all my plain text do lists. I mostly use plain text do lists because I find them to fit well with the work I do. They are well suited for small programming projects and generally any kind of task that needs to get done on your computer.

@@ -1,4 +1,4 @@
-Version 0.1 (Initial Draft)
+Version 0.1 (Working Draft)
 
 Important
 x rethink how i can make file naming more cmd friendly
