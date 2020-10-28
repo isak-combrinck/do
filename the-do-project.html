@@ -1,32 +1,15 @@
-<!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>The Do Project</title>
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-        
-        <style>
-.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
-</style>
-        <style>
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
-                font-size: 14px;
-                line-height: 1.6;
-            }
-        </style>
-        
-        
-    </head>
-    <body class="vscode-light">
-        <h1 id="the-do-project">The Do Project</h1>
-<p>2019-12-16: Version 0.1.0 '<em>Working Draft</em>'</p>
-<p><em>The Do Project</em> defines a standard syntax for creating plain text do lists.</p>
-<p>This is a formal write-up of the syntax that I use for all my plain text do lists. I mostly use plain text do lists because I find them to fit well with the work I do. They are well suited for small programming projects and generally any kind of task that needs to get done on your computer.</p>
-<p>Let's start with an example of a simple do list; I will explain the syntax below.</p>
-<pre><code><code><div>2019-10-7 Monday
+<h1>The Do Project</h1>
+<p>
+    [0.1.1] <em>Concept</em> - 2019-12-16
+    <br><br>
+    <em>The Do Project</em> defines a standard syntax for creating plain text do lists.
+    <br><br>
+    This is a formal write-up of the syntax that I use for all my plain text do lists. I mostly use plain text do lists because I find them a good fit to the work I do. They are well suited for small programming projects and generally any kind of task that needs to get done on a computer.
+    <br><br>
+    Let's start with an example of a simple do list; I will explain the syntax below.
+</p>
+
+<code>2019-10-7 Monday
 - publish first draft for the do project
 x write first draft for the do project
 ! polish first draft for the do project
@@ -35,25 +18,36 @@ Backlog
 - create a page for the do project
 
 Wishlist
-- create a compiler, do to html
-</div></code></code></pre>
-<p>From the example we see that the do list is divided into sections. A <em>section</em> is any block of text with an empty line above and below it; so basically a paragraph. Headings are a simple text to let you know what the coming section is about, when it's due, etc. A <em>heading</em> is simply the first line of text in a section.</p>
-<p>Each section contains a number of tasks which can be in one of three states.</p>
-<ul>
-<li><code>-</code> <strong>Do</strong>: something to get done.</li>
-<li><code>x</code> <strong>Done</strong>: something that got done.</li>
-<li><code>!</code> <strong>Cancelled</strong>: something that had to get done but did not get done.</li>
-</ul>
-<p>You can save your do lists with whatever extension you want. <code>.txt</code> and <code>.md</code> are good options and you can even use the <code>.do</code> extension if you want to be cool. <code>--filename.txt</code> is the syntax I use for my do files. Let me dissect the syntax of an example do file to make it more understandable.</p>
-<pre><code><code><div>--2019-October.txt
-</div></code></code></pre>
-<p>The first character in a file name represents its state (in this case <em>do</em>), all following characters have no special meaning. If the list is completed or cancelled we change the first character to reflect the change of state.</p>
-<pre><code><code><div>x-2019-October.txt
-</div></code></code></pre>
-<pre><code><code><div>!-2019-October.txt
-</div></code></code></pre>
-<p>This helps makes folders with a lot of different do lists easier to manage as you can groups files by their state (do, done, cancelled).</p>
-<h3 id="thats-it-i-hope-this-helps-you-keep-track-of-what-you-need-to-do">That's it! I hope this helps you keep track of what you need to do.</h3>
+- create a compiler, do to html</code>
 
-    </body>
-    </html>
+<p>
+    From the example we see that the do list is divided into sections. A <em>section</em> is any block of text with an empty line above and below it; so basically a paragraph. Headings are a simple text to let you know what the coming section is about, when it's due, etc. A <em>heading</em> is simply the first line of text in a section.
+    <br><br>
+    Each section contains a number of tasks which can be in one of three states.
+</p>
+<p>
+    <strong>-</strong> <em>Do</em>: something to get done.<br>
+    <strong>x</strong> <em>Done</em>: something that got done.<br>
+    <strong>!</strong> <em>Cancelled</em>: something that had to get done but did not get done.
+</p>
+<p>
+    You can save your do lists with whatever extension you want. Common extensions like <code>.txt</code> and <code>.md</code> are good options and you can even use the <code>.do</code> extension if you want to be cool. <code>--filename.txt</code> is the syntax I use for my do files. Let me dissect the syntax of an example do file to make it more understandable.
+    <br>
+</p>
+
+<code>--2019-October.txt</code>
+
+<p>
+    The first character in a file name represents its state (in this case <em>do</em>), all following characters have no special meaning. If the list is completed or cancelled we change the first character to reflect the change of state.
+</p>
+
+<code>x-2019-October.txt
+
+!-2019-October.txt
+</code>
+
+<p>
+    This helps make folders with a lot of different do lists easier to manage as you can groups files by their state (do, done, cancelled).
+    <br><br>
+    That's it! I hope it helps you be more productive.
+</p>
